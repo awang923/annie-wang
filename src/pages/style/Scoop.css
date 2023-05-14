@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Inter;
+    src: url('../../assets/css/Inter.ttf');
+}
+
+/* .scoop{
+    color: #fffaf0,
+} */
+
+.scoop .project-header{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    /* padding: 200px 0 100px 0; */
+    background-color: #2B57BC;
+    border-color: #2B57BC;
+    border-radius: 0 0 40px 40px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoop .project-header .row {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.scoop .logo {
+    width: 50%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.scoop .project-header h2 {
+    font-size: 25pt;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.scoop .project-header p {
+    color: #B8B8B8;
+    font-size: 14pt;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+}
+
+.scoop .header-textbox {
+    display: table;
+    align-self: center;
+}
+
+.scoop .project-content .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.scoop .project-content h3 {
+    font-size: 18pt;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.scoop .project-content p {
+    color: #B8B8B8;
+    font-size: 11pt;
+    letter-spacing: 0.8px;
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.scoop .phone-img {
+    width: 70%;
+    height: auto;
+}
+
+.scoop .project-content .tech-details .techflow p{
+    color: #18191D !important;
+}
+
+.scoop .project-content .tech-details .techflow .tech-title-text{
+    font-size: 14pt;
+    display: flex;
+    justify-content: center;
+}
+
+.techflow-phone-img {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+}

@@ -9,9 +9,10 @@ import FadeInOut from "./FadeInOut";
 export const Projects = () => {
     return (
         <section className="projects" id="projects">
-            <h2>Projects</h2>
+            
             <Container>
                 <FadeInOut>
+                    <h2>Projects</h2>
                     <Row className='item'>
                         <Col xs={12} md={6} xl={7}>
                             <img src={redfin} alt="img" />
@@ -31,7 +32,7 @@ export const Projects = () => {
                 <FadeInOut>
                     <Row className='phone'>
                         <Col className='project-textbox' xs={12} md={6} xl={5}>
-                            <a href="">Scoop</a>
+                            <Link to="/scoop">Scoop</Link>
                             <p>
                                 Scoop is a mobile app that assist university students in exploring the surrounding 
                                 area by providing them with self-guided tours led by other students. The app is available on 
@@ -50,7 +51,7 @@ export const Projects = () => {
                             <img src={mindtapp} alt="img" />
                         </Col>
                         <Col className='project-textbox' xs={12} md={6} xl={5}>
-                            <a href="#">MINDTAPP</a>
+                            <Link to="/mindtapp">MINDTAPP</Link>
                             <p>
                             MINDTAPP (Mind Training Application) is a mobile application that enables you 
                             to tap into your fullest potential by providing mindset training. It is built
