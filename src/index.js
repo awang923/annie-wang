@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
-import Redfin from './Redfin';
+import Redfin from './pages/Redfin';
+import Scoop from './pages/Scoop';
+import Mindtapp from './pages/Mindtapp';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ const router = createBrowserRouter([
   {
     path:'/redfin',
     element: <Redfin />
+  },
+  {
+    path:'/scoop',
+    element: <Scoop />
+  },
+  {
+    path:'/mindtapp',
+    element: <Mindtapp />
   }
 ]);
 
@@ -22,6 +32,6 @@ root.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
-  <RouterProvider router={router} />
+  <RouterProvider router={router}/>
 );
 

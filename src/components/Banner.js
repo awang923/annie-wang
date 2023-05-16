@@ -34,7 +34,7 @@ export const Banner = () => {
         else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(200);
         }
     }
 
@@ -43,18 +43,18 @@ export const Banner = () => {
             <Container>
                 <Row className='align-items-center'>
                     <Col xs={12} md={6} xl={7}>
-                        <span className='tagline'>
+                        {/* <span className='tagline'>
                             Portfolio
-                        </span>
+                        </span> */}
                         <h1>
-                            Hi~ I'm Annie ◡̈  
+                            Hello world! I'm Annie ◡̈  
                             {/* {`Hi~ I'm Annie ◡̈`} */}
                         </h1>
                         <h3>A <span className="wrap">{text}</span></h3>
-                        <h3>who xyz123...</h3>
-                        <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        </p>
+                        <h3>who thrives to make designs come alive</h3>
+                        {/* <p>
+                            "" - 
+                        </p> */}
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={profile} alt="header img" />
