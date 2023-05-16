@@ -101,13 +101,14 @@ p.danger {
 .banner h3 {
   font-size: 18pt;
   letter-spacing: 1px;
+  font-weight: 300;
 }
 
 .banner h3 span {
   font-size: 20pt;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
-  line-height: 0.7px;
+  font-weight: 500;
+  line-height: 1px;
 }
 .banner p {
   color: #B8B8B8;
@@ -116,6 +117,7 @@ p.danger {
   line-height: 1.5em;
   margin-top: 25px;
   width: 96%;
+  font-style: italic;
 }
 .banner button {
   color: #fff;
@@ -286,6 +288,11 @@ p.danger {
   line-height: 2em;
   display: table-row;
   vertical-align: middle;
+  text-align: left !important;
+}
+.about img {
+  width: 70%;
+  height: auto;
 }
 
 /************* Footer *****************/
