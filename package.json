@@ -1,6 +1,5 @@
 {
-  "homepage": "http://awang923.github.io./personal-portfolio",
-
+  "homepage": "http://awang923.github.io/personal-portfolio",
   "name": "personal-portfolio",
   
   "version": "0.1.0",
@@ -96,7 +95,6 @@
   
     
   "start": "react-scripts start",
-  
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
     
