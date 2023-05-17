@@ -9,10 +9,13 @@ import { ScoopTechFlow } from './components/ScoopTechFlow';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
 import { Link } from 'react-router-dom';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
+
 
 function Scoop() {
   return (
-    <div className="scoop" id="scoop">
+    <div className="scoop" id="top">
+      <ScrollToTopOnMount />
       <NavBar />
       <Container className='project-header'>
         <Row>

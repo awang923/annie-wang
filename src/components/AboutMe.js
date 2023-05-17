@@ -18,13 +18,13 @@ export const AboutMe = () => {
                             <p>
                                 I was born and raised in Southern California and also spent a few years 
                                 living in Taiwan. On typical weekends, you'll find me going on a quick 
-                                boba run to my favorite shop in town, and then I enjoy immersing myself 
+                                boba run to my favorite shop in town, and then immersing myself 
                                 in building new LEGO sets or embarking on a small getaway to nature to 
                                 capture beautiful photographs.
                             </p>
                             <br />
                             <p>
-                                Originally, I aspired to become a veterinarian due to my love for animals 
+                                Up until high school, I aspired to become a veterinarian due to my love for animals 
                                 (dogs and elephants being my favorites). However, after taking a few 
                                 physiology and anatomy classes, I realized that memorization wasn't 
                                 my forte. I discovered that my true passion lies in understanding 

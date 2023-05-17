@@ -10,12 +10,13 @@ import mindCubeDemo from '../assets/img/mindCubeDemo.mp4';
 import ReactPlayer from 'react-player';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
-import { Link } from 'react-router-dom';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
 
 function Mindtapp() {
   return (
-    <div className="mindtapp" id="mindtapp">
+    <div className="mindtapp" id="top">
+      <ScrollToTopOnMount />
       <NavBar />
       <Container className='project-header'>
         <Row>

@@ -13,7 +13,8 @@ import redfinOverview1 from '../assets/img/redfinOverview1.png';
 import redfinOverview2 from '../assets/img/redfinOverview2.png';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
 
 
@@ -63,7 +64,8 @@ const steps = [
 
 function Redfin() {
   return (
-    <div className="redfin" id="redfin">
+    <div className="redfin" id="top">
+      <ScrollToTopOnMount />
       <NavBar />
       <Container className='project-header'>
         <Row>

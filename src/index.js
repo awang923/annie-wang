@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -29,7 +29,8 @@ const router = createHashRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <HashRouter>
-      <RouterProvider router={router} />
-  // </HashRouter>
+  // <React.Fragment>
+    <RouterProvider router={router} />
+  //   <ScrollToTop />
+  // </React.Fragment>
 );
