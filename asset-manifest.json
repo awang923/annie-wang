@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio/static/css/main.146ec22e.css",
+    "main.js": "/personal-portfolio/static/js/main.713194d3.js",
+    "static/media/redfinDemo.mp4": "/personal-portfolio/static/media/redfinDemo.fe24921c626992efb38c.mp4",
+    "static/media/profile.svg": "/personal-portfolio/static/media/profile.fbf2099602129517f9bb5f67cb08e733.svg",
+    "static/media/redfinOverview2.png": "/personal-portfolio/static/media/redfinOverview2.7898d6dbba8f96e788c3.png",
+    "static/media/redfinOverview1.png": "/personal-portfolio/static/media/redfinOverview1.a5076636dbde57a38c23.png",
+    "static/media/redfinOutcome.jpg": "/personal-portfolio/static/media/redfinOutcome.784abdb1801c8e09dfce.jpg",
+    "static/media/aboutMePic.jpg": "/personal-portfolio/static/media/aboutMePic.631353c55bfe107aa084.jpg",
+    "static/media/digitalBackground.png": "/personal-portfolio/static/media/digitalBackground.1159eccdcce7ebf0766f.png",
+    "static/media/mindCubeDemo.mp4": "/personal-portfolio/static/media/mindCubeDemo.353f9461eeabdb0b917a.mp4",
+    "static/media/Inter.ttf": "/personal-portfolio/static/media/Inter.f1c87530d95f27534b4d.ttf",
+    "static/media/redfin.png": "/personal-portfolio/static/media/redfin.a03cd82975b9db1444da.png",
+    "static/media/scoop2.png": "/personal-portfolio/static/media/scoop2.76e8d3a1f4d7f35c50be.png",
+    "static/media/scoop.png": "/personal-portfolio/static/media/scoop.a7f409f7bd6fce38532a.png",
+    "static/media/mindtapp2.png": "/personal-portfolio/static/media/mindtapp2.4ee2002db9fa42f7eb90.png",
+    "static/media/scoopProfile.png": "/personal-portfolio/static/media/scoopProfile.f96a2fca505543146c21.png",
+    "static/media/scoopFeedback.png": "/personal-portfolio/static/media/scoopFeedback.6fc4e971fe8fdc709a52.png",
+    "static/media/mindCube.png": "/personal-portfolio/static/media/mindCube.9e42fe53327f8acad619.png",
+    "static/media/mindtapp.png": "/personal-portfolio/static/media/mindtapp.e090ca09c389314cb80f.png",
+    "static/media/mindtappLogo.png": "/personal-portfolio/static/media/mindtappLogo.993647edae6f7fa308e8.png",
+    "static/media/scoopLogo.png": "/personal-portfolio/static/media/scoopLogo.f475f4ed9173c749c21e.png",
+    "static/media/logo.svg": "/personal-portfolio/static/media/logo.4112f6c5e41bd5aa91a8d598fae6b6dd.svg",
+    "static/media/github.svg": "/personal-portfolio/static/media/github.d4577cfbb9306cfe891b2ac5c1586b8c.svg",
+    "index.html": "/personal-portfolio/index.html",
+    "static/media/linkedin.svg": "/personal-portfolio/static/media/linkedin.7ea113699fb66e38731911cd17c61005.svg",
+    "main.146ec22e.css.map": "/personal-portfolio/static/css/main.146ec22e.css.map",
+    "main.713194d3.js.map": "/personal-portfolio/static/js/main.713194d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.146ec22e.css",
+    "static/js/main.713194d3.js"
+  ]
+}
