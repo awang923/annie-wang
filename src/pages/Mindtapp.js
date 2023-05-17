@@ -1,6 +1,4 @@
 import './style/Mindtapp.css';
-import { useRef, useEffect } from 'react';
-import { Link } from 'react-scroll';
 import { Container, Col, Row } from 'react-bootstrap';
 import { NavBar } from '../components/NavBar';
 import FadeInOut from '../components/FadeInOut';
@@ -12,6 +10,7 @@ import mindCubeDemo from '../assets/img/mindCubeDemo.mp4';
 import ReactPlayer from 'react-player';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 
 function Mindtapp() {

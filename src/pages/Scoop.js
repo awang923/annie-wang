@@ -1,6 +1,4 @@
 import './style/Scoop.css';
-import { useRef, useEffect } from 'react';
-import { Link } from 'react-scroll';
 import { Container, Col, Row } from 'react-bootstrap';
 import { NavBar } from '../components/NavBar';
 import FadeInOut from '../components/FadeInOut';
@@ -10,6 +8,7 @@ import scoopLogo from '../assets/img/scoopLogo.png';
 import { ScoopTechFlow } from './components/ScoopTechFlow';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 function Scoop() {
   return (
@@ -69,7 +68,10 @@ function Scoop() {
        
       </div>    
       <div className='next-project'>
-        <h4><a href='/mindtapp'>Next Project</a> <BsArrowRightShort /></h4>
+        <h4>
+          <Link to='/mindtapp'>Next Project</Link> 
+          <BsArrowRightShort />
+        </h4>
       </div>
       <Footer />   
     </div> 

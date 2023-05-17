@@ -1,8 +1,7 @@
 import './style/Redfin.css';
-import { useRef, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import { RedfinTechFlow } from './components/RedfinTechFlow';
-import { Container, Col, Row, Fade } from 'react-bootstrap';
+import { Container, Col, Row } from 'react-bootstrap';
 import { NavBar } from '../components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import redfin from '../assets/img/redfin.png';
@@ -14,6 +13,7 @@ import redfinOverview1 from '../assets/img/redfinOverview1.png';
 import redfinOverview2 from '../assets/img/redfinOverview2.png';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
+import { BrowserRouter, Link } from 'react-router-dom';
 
 
 
@@ -172,7 +172,10 @@ function Redfin() {
        
       </div> 
       <div className='next-project'>
-        <h4><a href='/scoop'>Next Project</a> <BsArrowRightShort /></h4>
+        <h4>
+          <Link to="/scoop">Next Project</Link>
+          <BsArrowRightShort />
+        </h4>        
       </div>
       <Footer />    
     </div> 

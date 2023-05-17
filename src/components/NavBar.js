@@ -5,6 +5,7 @@ import logo from '../assets/img/logo.svg';
 import github from '../assets/img/github.svg';
 import email from '../assets/img/email.png';
 import linkedin from '../assets/img/linkedin.svg';
+import { HashLink } from 'react-router-hash-link';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -31,7 +32,7 @@ export const NavBar = () => {
     return (
         <Navbar expand="md" className={scrolled ? "scrolled": ""}>
             <Container>
-                <Navbar.Brand href="/">
+                <Navbar.Brand as={HashLink} to="/#home">
                     <img style={{width: '160%'}}src={logo} alt="Logo" />
                 </Navbar.Brand>
                 {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -39,21 +40,24 @@ export const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav classname="ms-auto">
                         <Nav.Link 
-                            href="/" 
+                            as={HashLink}
+                            to="/#home" 
                             className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
                             onClick={() => onUpdateActiveLink('home')}
                         >
-                                Home
+                            Home
                         </Nav.Link>
                         <Nav.Link 
-                            href="/#projects" 
+                            as={HashLink}
+                            to="/#projects" 
                             className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
                             onClick={() => onUpdateActiveLink('projects')}
                         >
                             Projects
                         </Nav.Link>
                         <Nav.Link 
-                            href="/#about" 
+                            as={HashLink}
+                            to="/#about"  
                             className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
                             onClick={() => onUpdateActiveLink('about')}
                         >
