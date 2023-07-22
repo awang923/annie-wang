@@ -6,6 +6,7 @@ import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Redfin from './pages/Redfin';
 import Scoop from './pages/Scoop';
 import Mindtapp from './pages/Mindtapp';
+import { Discord } from './welcomes/Discord';
 
 const router = createHashRouter([
   {
@@ -25,6 +26,10 @@ const router = createHashRouter([
     path:'/mindtapp',
     element: <Mindtapp />
   },
+  {
+    path: '/discord',
+    element: <Discord />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
