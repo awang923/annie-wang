@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.146ec22e.css",
-    "main.js": "/personal-portfolio/static/js/main.713194d3.js",
+    "main.js": "/personal-portfolio/static/js/main.36b37035.js",
     "static/media/redfinDemo.mp4": "/personal-portfolio/static/media/redfinDemo.fe24921c626992efb38c.mp4",
     "static/media/profile.svg": "/personal-portfolio/static/media/profile.fbf2099602129517f9bb5f67cb08e733.svg",
     "static/media/redfinOverview2.png": "/personal-portfolio/static/media/redfinOverview2.7898d6dbba8f96e788c3.png",
@@ -26,10 +26,10 @@
     "index.html": "/personal-portfolio/index.html",
     "static/media/linkedin.svg": "/personal-portfolio/static/media/linkedin.7ea113699fb66e38731911cd17c61005.svg",
     "main.146ec22e.css.map": "/personal-portfolio/static/css/main.146ec22e.css.map",
-    "main.713194d3.js.map": "/personal-portfolio/static/js/main.713194d3.js.map"
+    "main.36b37035.js.map": "/personal-portfolio/static/js/main.36b37035.js.map"
   },
   "entrypoints": [
     "static/css/main.146ec22e.css",
-    "static/js/main.713194d3.js"
+    "static/js/main.36b37035.js"
   ]
 }
