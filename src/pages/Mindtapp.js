@@ -8,8 +8,9 @@ import mindtappLogo from '../assets/img/mindtappLogo.png';
 import { MindtappTechFlow } from './components/MindtappTechFlow';
 import mindCubeDemo from '../assets/img/mindCubeDemo.mp4';
 import ReactPlayer from 'react-player';
-import { BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowRightShort, BsArrowLeftShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
+import { Link } from 'react-router-dom';
 import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
 
@@ -80,6 +81,12 @@ function Mindtapp() {
             </button>
           </Container>
         </FadeInOut>
+      </div>
+      <div className='project-nav'>
+        <h4 className='back'>
+          <BsArrowLeftShort />
+          <Link to="/scoop">Back</Link>
+        </h4>   
       </div>
       <Footer />      
     </div> 

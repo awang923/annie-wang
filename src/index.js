@@ -7,12 +7,17 @@ import Redfin from './pages/Redfin';
 import Scoop from './pages/Scoop';
 import Mindtapp from './pages/Mindtapp';
 import { Discord } from './welcomes/Discord';
+import DigitalDomain from './pages/DigitalDomain';
 
 const router = createHashRouter([
   {
     index: true,
     path:'/',
     element: <App />
+  },
+  {
+    path:'/digitaldomain',
+    element: <DigitalDomain />
   },
   {
     path:'/redfin',

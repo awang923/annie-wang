@@ -38,7 +38,7 @@ export const NavBar = () => {
                 {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <span className="navbar-toggler-icon"></span> */}
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav classname="ms-auto">
+                    <Nav className="ms-auto">
                         <Nav.Link 
                             as={HashLink}
                             to="/#home" 

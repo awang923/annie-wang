@@ -11,7 +11,7 @@ import redfinDemo from '../assets/img/redfinDemo.mp4'
 import redfinOutcome from '../assets/img/redfinOutcome.jpg';
 import redfinOverview1 from '../assets/img/redfinOverview1.png';
 import redfinOverview2 from '../assets/img/redfinOverview2.png';
-import { BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
 import { Link } from 'react-router-dom';
 import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
@@ -73,7 +73,7 @@ function Redfin() {
                 <img className='logo' src={redfinLogo} alt='logo' />
                 <h2>Map View in Redfin Builder Tools</h2>
                 <p>
-                  Software Developer | June 2022 - September 2022
+                  Software Developer Intern | June 2022 - September 2022
                 </p>
             </Col>
             <Col>
@@ -173,9 +173,13 @@ function Redfin() {
         
        
       </div> 
-      <div className='next-project'>
-        <h4>
-          <Link to="/scoop">Next Project</Link>
+      <div className='project-nav'>
+        <h4 className='back'>
+          <BsArrowLeftShort />
+          <Link to="/digitaldomain">Back</Link>
+        </h4>   
+        <h4 className='next'>
+          <Link to="/scoop">Next</Link>
           <BsArrowRightShort />
         </h4>        
       </div>

@@ -14,14 +14,29 @@ export const Projects = () => {
                 <FadeInOut>
                     <h2>Projects</h2>
                     <Row className='item'>
+                        <Col className='project-textbox' xs={12} md={6} xl={5}>
+                            <Link to="/digitaldomain">Digital Domain</Link>
+                            <p>                            
+                                At Digial Domain, I was part of the core web development team that 
+                                utilizes <span>ReactJS</span> and <span>Python</span>. I worked on an application 
+                                accessible to both artists and managers in the VFX team for borwsing and managing disk space.
+                            </p>
+                        </Col>
+                        <Col xs={12} md={6} xl={7}>
+                            <img src='#' alt="img" />
+                        </Col>
+                    </Row>
+                </FadeInOut>
+                <FadeInOut>
+                    <Row className='item'>
                         <Col xs={12} md={6} xl={7}>
                             <img src={redfin} alt="img" />
                         </Col>
                         <Col className='project-textbox' xs={12} md={6} xl={5}>
                             {/* <a href="/redfin">Map View in Redfin Builder Tools</a> */}
-                            <Link to="/redfin">Map View in Redfin Builder Tools</Link>
+                            <Link to="/redfin">Redfin</Link>
                             <p>                            
-                                The project utilizes <span>ReactJS</span> and <span>GraphQL</span> to introduce a map view feature in 
+                                The project I worked on in Redfin utilizes <span>ReactJS</span> and <span>GraphQL</span> to introduce a map view feature in 
                                 the desktop version of Builder Tools (BT), which aims to enhance the efficiency of the 
                                 field team in locating renovation sites and planning commutes and procurement routes.
                             </p>

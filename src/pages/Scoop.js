@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import scoop2 from '../assets/img/scoop2.png';
 import scoopLogo from '../assets/img/scoopLogo.png';
 import { ScoopTechFlow } from './components/ScoopTechFlow';
-import { BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowRightShort, BsArrowLeftShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
 import { Link } from 'react-router-dom';
 import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
@@ -70,11 +70,15 @@ function Scoop() {
         </FadeInOut>
        
       </div>    
-      <div className='next-project'>
-        <h4>
-          <Link to='/mindtapp'>Next Project</Link> 
+      <div className='project-nav'>
+      <h4 className='back'>
+          <BsArrowLeftShort />
+          <Link to="/redfin">Back</Link>
+        </h4>   
+        <h4 className='next'>
+          <Link to="/mindtapp">Next</Link>
           <BsArrowRightShort />
-        </h4>
+        </h4>  
       </div>
       <Footer />   
     </div> 
