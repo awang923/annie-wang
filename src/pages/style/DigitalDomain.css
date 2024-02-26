@@ -9,8 +9,8 @@
     margin-right: auto;
     max-width: 100%;
     /* padding: 200px 0 100px 0; */
-    background-color: #DEDEDE;
-    border-color: #DEDEDE;
+    background-color: #D6D6D6;
+    border-color: #D6D6D6;
     border-radius: 0 0 40px 40px;
     height: 90vh;
     display: flex;
@@ -25,9 +25,8 @@
     margin-right: auto;
 }
 .digitaldomain .logo {
-    width: 40%;
+    width: 50%;
     height: auto;
-    margin-bottom: 50px;
 }
 
 .digitaldomain .project-header h2 {
@@ -36,11 +35,11 @@
     letter-spacing: 1.5px;
     line-height: 1.5em;
     margin-bottom: 20px;
-    color: black;
+    color: #505050;
 }
 
 .digitaldomain .project-header p {
-    color: #414141;
+    color: #626262;
     font-size: 14pt;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -102,10 +101,14 @@
     display: flex;
     justify-content: center;
 }
-
-.vid-player{
+.digitaldomain .demos p {
+    margin-bottom: 20px;
+    font-size: 16pt;
+}
+.digitaldomain .vid-player{
     display: flex;
-    justify-content: center;
+    margin-bottom: 20px;
+    justify-content: left;
 }
 
 .project-nav {

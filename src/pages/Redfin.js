@@ -137,8 +137,9 @@ function Redfin() {
                 controls={true} 
                 onPlay={() => console.log('video is playing')} 
                 onPause={() => console.log('video is paused')}
-                onError={(e) => console.log('Error:', e)} 
-                width='80%'
+                onError={(e) => console.log('Error:', e)}
+                width='100%'
+                height='550px'
               />
             </div>
             

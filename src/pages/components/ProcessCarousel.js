@@ -27,7 +27,7 @@ const ProcessCarousel = ({ items }) => {
           return (
             <Paper
               style={{
-                backgroundColor: '#dcdcdc',
+                backgroundColor: '#D6D6D6',
                 // opacity: 0,
                 padding: '20px',
                 height:'350px',

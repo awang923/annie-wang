@@ -3,6 +3,7 @@ import { Container, Row, Col, Fade } from "react-bootstrap";
 import redfin from '../assets/img/redfin.png';
 import scoop from '../assets/img/scoop.png';
 import mindtapp from '../assets/img/mindtapp.png';
+import diskard from '../assets/img/diskard.png';
 import FadeInOut from "./FadeInOut";
 
 
@@ -23,7 +24,7 @@ export const Projects = () => {
                             </p>
                         </Col>
                         <Col xs={12} md={6} xl={7}>
-                            <img src='#' alt="img" />
+                            <img src={diskard} alt="img" />
                         </Col>
                     </Row>
                 </FadeInOut>

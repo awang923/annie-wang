@@ -1,5 +1,6 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import ProcessCarousel from './ProcessCarousel';
+import ddTreeview from '../../assets/img/ddTreeview.png';
 import 'react-vertical-timeline-component/style.min.css';
 
 export const DigitalDomainTechFlow = () => {
@@ -52,7 +53,7 @@ export const DigitalDomainTechFlow = () => {
           className="vertical-timeline-element--work"
           date="Core - Explore assets in context"
           dateClassName='tech-title-text'
-          iconStyle={{ background: 'rgb(200, 32, 33)', color: '#fff' }}
+          iconStyle={{ background: 'rgb(170, 31, 47)', color: '#fff' }}
         >
          <ProcessCarousel items={contextFeatures} />
         </VerticalTimelineElement>
@@ -70,19 +71,19 @@ export const DigitalDomainTechFlow = () => {
           className="vertical-timeline-element--work"
           date='Core - Tree View '
           dateClassName='tech-title-text'
-          iconStyle={{ background: 'rgb(200, 32, 33)', color: '#fff' }}
+          iconStyle={{ background: 'rgb(170, 31, 47)', color: '#fff' }}
         >
-          <p>
-            This feature replaces the single-leaf-level selection with a dynamic, multi-level 
-            tree view implemented using D3.js Observable. Users can now visualize and navigate 
-            the entire asset directory structure, expanding/collapsing branches and selecting 
-            assets for deletion across multiple levels simultaneously. The data updates seamlessly 
-            via ReactJS hooks, enabling users to switch between list and tree view on the fly. 
-            This upgrade leverages D3.js's strengths in visualizing hierarchical data and React's 
-            component-based architecture for a performant and user-friendly experience. Notably, 
-            the tree view inherits all functionalities of the original list view, including 
-            multi-item selection and quick navigation to expand all leaf nodes within a chosen branch.
+          <p style={{marginBottom: '20px'}}>
+            This feature replaces the single-level selection with a dynamic, multi-level 
+            tree view using D3.js Observable. Users can now visualize and navigate the entire asset 
+            directory structure, expanding/collapsing branches and selecting assets for deletion 
+            across multiple levels simultaneously. The view seamlessly updates via ReactJS hooks, 
+            and users switch between list and tree view on the fly. Leverages D3.js's strengths in 
+            visualizing hierarchical data and React's component-based architecture, this upgrade 
+            delivers a performant and user-friendly experience. Notably, the tree view retains all 
+            functionalities of the original list view, including multi-item selection and quick navigation.
           </p>
+          <img src={ddTreeview} alt='tree-view' />
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

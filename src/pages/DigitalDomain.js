@@ -5,6 +5,10 @@ import { DigitalDomainTechFlow } from './components/DigitalDomainTechFlow';
 import { NavBar } from '../components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ddLogo from '../assets/img/ddLogo.png';
+import diskard from '../assets/img/diskard.png';
+import dd_demo1 from '../assets/img/dd_demo1.mp4';
+import dd_demo2 from '../assets/img/dd_demo2.mp4';
+import ddFinal from '../assets/img/ddFinal.png';
 import FadeInOut from '../components/FadeInOut';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
@@ -26,7 +30,7 @@ function DigitalDomain() {
               </p>
           </Col>
           <Col>
-            <img />
+            <img src={diskard} alt="img" />
           </Col>
         </Row>
       </Container>
@@ -62,9 +66,36 @@ function DigitalDomain() {
         <FadeInOut>
           <Container className='demos'>
             <h3>DEMOS</h3>
-            <div className='vid-player'>
-              
-            </div>
+            <ul>
+              <li>
+                <p>Core - Explore assets in context & Enhanced asset search</p>
+                <div className='vid-player'>
+                  <ReactPlayer 
+                      url={dd_demo1} 
+                      controls={true} 
+                      onPlay={() => console.log('video is playing')} 
+                      onPause={() => console.log('video is paused')}
+                      onError={(e) => console.log('Error:', e)}
+                      width='100%'
+                      height='550px'
+                  />
+                </div>
+              </li>
+              <li>
+                <p>Core - Tree view</p>
+                <div className='vid-player'>
+                  <ReactPlayer 
+                      url={dd_demo2} 
+                      controls={true} 
+                      onPlay={() => console.log('video is playing')} 
+                      onPause={() => console.log('video is paused')}
+                      onError={(e) => console.log('Error:', e)}
+                      width='100%'
+                      height='550px'
+                  />
+                </div>
+              </li>
+            </ul>
             
           </Container>
         </FadeInOut>
@@ -75,10 +106,17 @@ function DigitalDomain() {
             <Row>
               <Col>
               <p>
-                
+                During my internship at Digital Domain, I'm most proud of taking ownership of features 
+                and mastering containerization with Docker. Working on Diskard honed my backend skills 
+                in Python and broadened my understanding of frontend development, particularly with ReactJS 
+                and diverse libraries. A pivotal moment was successfully deploying Diskard upgrades twice, 
+                resulting in positive feedback from the VFX and Core Engineering team. This experience not 
+                only reinforced my passion for web development but also afforded me valuable insights into 
+                VFX pipelines.
               </p>
               </Col>
               <Col>
+                <img className='outcome-img' src={ddFinal} alt='final' />
               </Col>
             </Row>
             
