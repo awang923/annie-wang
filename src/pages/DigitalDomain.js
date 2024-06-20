@@ -26,8 +26,7 @@ function DigitalDomain() {
             <img className='logo' src={ddLogo} alt='logo' />
               <h2>Digital Domain</h2>
               <p>
-                Software Engineering Intern | October 2023 - March 2024
-              </p>
+                Software Engineering | October 2023 - Present
           </Col>
           <Col>
             <img src={diskard} alt="img" />
