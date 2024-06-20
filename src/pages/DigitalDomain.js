@@ -27,6 +27,7 @@ function DigitalDomain() {
               <h2>Digital Domain</h2>
               <p>
                 Software Engineering | October 2023 - Present
+              </p>
           </Col>
           <Col>
             <img src={diskard} alt="img" />
