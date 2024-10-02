@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
+import { Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
 const ProcessCarousel = ({ items }) => {
@@ -18,25 +19,33 @@ const ProcessCarousel = ({ items }) => {
           }
         }}
         navButtonsProps={{
-          style: {
-
-          }
         }}
       >
         {items.map((item, index) => {
           return (
             <Paper
               style={{
-                backgroundColor: '#D6D6D6',
-                // opacity: 0,
+                backgroundColor: '#f9f9f9',
+                boxShadow: '3px 3px 10px rgb(0, 0, 0, 0.1)',
                 padding: '20px',
-                height:'350px',
-                minHeight: '100%',
+                height:'auto',
+                minHeight: 'unset',
+                borderRadius: '15px',
+                padding: '25px',
               }} 
               id={index}
             >
-              <h4>{item.title}</h4>
+              <h3>{item.title}</h3>
+              {/* <Row>
+                <Col>
+                  <p>{item.description}</p>
+                </Col>
+                <Col>
+                  {item.src}
+                </Col>
+              </Row> */}
               <p>{item.description}</p>
+              {item.src}
             </Paper>
           )
         })}

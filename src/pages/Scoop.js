@@ -3,8 +3,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import { NavBar } from '../components/NavBar';
 import FadeInOut from '../components/FadeInOut';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import scoop2 from '../assets/img/scoop2.png';
-import scoopLogo from '../assets/img/scoopLogo.png';
+import scoopBanner from '../assets/img/scoopBanner.png';
 import { ScoopTechFlow } from './components/ScoopTechFlow';
 import { BsArrowRightShort, BsArrowLeftShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
@@ -17,22 +16,12 @@ function Scoop() {
     <div className="scoop" id="top">
       <ScrollToTopOnMount />
       <NavBar />
-      <Container className='project-header'>
-        <Row>
-            <Col className='header-textbox'>
-                <img className='logo' src={scoopLogo} alt='logo' />
-                {/* <h2>Scoop</h2> */}
-                <p>
-                  Software Developer | December 2021 - June 2022
-                </p>
-            </Col>
-            <Col>
-                <img className='phone-img' src={scoop2} alt="img" />
-            </Col>
-        </Row>
-      </Container>
+      <div className='project-header'>
+        <img src={scoopBanner} />
+      </div>
      
       <div className='project-content'>
+      <h1>Software Engineer @ Scoop</h1>
         <FadeInOut>
           <Container className='project-overview'>
             <h3>WHAT IS SCOOP?</h3>

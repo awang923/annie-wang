@@ -3,46 +3,20 @@
     src: url('../../assets/css/Inter.ttf');
 }
 
-
 .digitaldomain .project-header{
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
-    /* padding: 200px 0 100px 0; */
-    background-color: #D6D6D6;
-    border-color: #D6D6D6;
-    border-radius: 0 0 40px 40px;
-    height: 90vh;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.digitaldomain .project-header .row {
-    width: 80%;
-    height: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.digitaldomain .logo {
-    width: 50%;
-    height: auto;
-}
-
-.digitaldomain .project-header h2 {
-    font-size: 25pt;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    line-height: 1.5em;
-    margin-bottom: 20px;
-    color: #505050;
-}
-
-.digitaldomain .project-header p {
-    color: #626262;
-    font-size: 14pt;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
+    img {
+        border-radius: 40px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .digitaldomain .header-textbox {
@@ -50,8 +24,15 @@
     align-self: center;
 }
 
+.digitaldomain .project-content {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .digitaldomain .project-content .container {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 150px;
     
 }
@@ -60,21 +41,40 @@
     margin-bottom: 0px;
 }
 
-.digitaldomain .project-content h3 {
+.digitaldomain .project-content h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.digitaldomain .project-content h2 {
     font-size: 18pt;
     font-weight: 500;
     letter-spacing: 1.5px;
     line-height: 1;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: left;
 }
 
-.digitaldomain .project-content p {
-    color: #B8B8B8;
-    font-size: 11pt;
+.digitaldomain .project-content h3 {
+    font-size: 14pt;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.digitaldomain p {
+    color: #000000;
+    font-size: 12pt;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    font-weight: 300;
     text-align: left;
 }
 .digitaldomain .col {
@@ -82,25 +82,35 @@
     align-self: center;
 }
 
-.digitaldomain .project-content .tech-details .side-notes {
-    color: #B8B8B8;
-    font-size: 10pt;
-    letter-spacing: 0.8px;
-    text-align: left;
-}
-.digitaldomain .techflow {
-    margin-top: 10px;
-}
-
 .digitaldomain .project-content .tech-details .techflow p{
-    color: #18191D !important;
+    color: #000 !important;
 }
 
 .digitaldomain .project-content .tech-details .techflow .tech-title-text{
     font-size: 14pt;
     display: flex;
     justify-content: center;
+    color: #000;
 }
+
+.vid-player{
+    display: flex;
+    justify-content: center;
+}
+
+.outcome-img {
+    border-radius: 10px;
+}
+
+.digitaldomain .project-content img {
+    padding: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .digitaldomain .demos p {
     margin-bottom: 20px;
     font-size: 16pt;
@@ -129,6 +139,61 @@
 
 .project-nav a {
     font-size: 14pt;
-    color: #fffaf0;
+    color: #49423c;
     text-decoration: none;
 }
+
+.project-carousel {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    width: 100%;
+    padding: 10px;
+}
+
+li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.digitaldomain .outcome button {
+    font-weight: 400;
+    color: #74B4C0;
+    border: 1px solid #74B4C0;
+    padding: 18px 34px;
+    font-size: 14pt;
+    margin-left: 18px;
+      position: relative;
+      background-color: transparent;
+      transition: 0.3s ease-in-out;
+  }
+  .digitaldomain .outcome button a {
+    z-index: 1;
+    text-decoration: none;
+    color: #74B4C0;
+  }
+
+  .digitaldomain .outcome button a:hover {
+    color: #18191D;
+  }
+
+  .digitaldomain .outcome button::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #74B4C0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+  .digitaldomain .outcome button:hover {
+    color: #18191D;
+  }
+  .digitaldomain .outcome button:hover::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+  }

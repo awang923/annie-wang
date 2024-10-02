@@ -1,7 +1,7 @@
 import { Container, Row } from "react-bootstrap";
 import { useState, useEffect } from 'react';
-import github from '../assets/img/github.svg';
-import linkedin from '../assets/img/linkedin.svg';
+import github from '../assets/img/github.png';
+import linkedin from '../assets/img/linkedin.png';
 import email from '../assets/img/email.png';
 
 export const Footer = () => {

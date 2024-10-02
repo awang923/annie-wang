@@ -20,9 +20,11 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #18191D !important;
-  color: #fffaf0 !important;
+  /* background-color: #18191D !important; */
+  background-color: #F5F5ED !important;
+  color: #000000 !important;
   font-family: 'Inter' !important;
+  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,8 +61,20 @@ input:focus, textarea:focus, select:focus {
 @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
-		padding: 0 150px;
+		padding: 0 100px;
 	}
+}
+
+.background  {
+  background-image: url('./assets/img/portfolio_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  /* min-height: 200vh; */
+}
+
+.content {
+  min-height: 100vh;
 }
 
 /* p.success {
@@ -74,7 +88,7 @@ p.danger {
 /************* Banner CSS *****************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 100px 0 250px 0;
   /* background-image: url('./assets/img/banner-bg.svg'); */
   background-position: top center;
   background-size: cover;
@@ -91,11 +105,11 @@ p.danger {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 30pt;
+  font-size: 25pt;
   font-weight: 500;
   letter-spacing: 1.5px;
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: block;
 }
 .banner h3 {
@@ -137,9 +151,14 @@ p.danger {
 .banner button:hover svg {
   margin-left: 25px;
 }
+.banner .image-row {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
 .banner img {
   animation: updown 3s linear infinite;
-  width: 80%;
+  width: 30%;
 }
 @keyframes updown {
     0% {
@@ -162,6 +181,18 @@ p.danger {
   position: relative;
 }
 
+.img-paper {
+  border-radius: 10px !important;
+  color: #f9f9f9 !important;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.img-paper:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0.95);
+}
+
 .projects-bx {
   background: #201F26;
   border-radius: 60px;
@@ -179,39 +210,60 @@ p.danger {
 .project-textbox {
   display: table;
   align-self: center;
+  margin-left: 70px;
   /* background-color: aquamarine; */
 }
 
 .projects a {
-  color: #fffaf0;
-  font-weight: 300;
+  color: #000000;
+  font-weight: 500;
   font-size: 18pt;
   letter-spacing: 1.5px;
   margin-bottom: 25px;
-  display: inline-flex;
+  display: flex;
   text-decoration: none;
+  text-align: left;
 }
 
 .projects a:hover {
-  color: #FFDEAA;
+  color: #5587ca;
+}
+
+.read-more {
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+
+  .arrow-icon {
+    font-size: 30px;
+
+  }
+}
+
+.read-more:hover {
+  color: #5587ca;
+  p {
+    color: #5587ca
+  }
 }
 
 .projects p {
-  color: #B8B8B8;
-  font-size: 11pt;
+  color: #000000;
+  font-size: 12pt;
   letter-spacing: 0.8px;
   line-height: 2em;
   display: table-row;
   vertical-align: middle;
+  text-align: left;
 }
 
 .projects p span {
   font-size: 13pt;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.7px;
   position: relative;
-  color: #FFDEAA;
+  color: #5587ca;
 }
 
 /* @keyframes underline {
@@ -282,7 +334,7 @@ p.danger {
 }
 
 .about p {
-  color: #B8B8B8;
+  color: #000000;
   font-size: 11pt;
   letter-spacing: 0.8px;
   line-height: 2em;
@@ -300,7 +352,7 @@ p.danger {
   padding-top: 30px;
   padding-bottom: 80px;
   align-items: left;
-  background-color: black;
+  background-color: #f9f9f9;
   /* position: fixed;
   z-index: 9999; */
   /* bottom: -100px;  */

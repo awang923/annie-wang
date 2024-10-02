@@ -4,8 +4,7 @@ import { RedfinTechFlow } from './components/RedfinTechFlow';
 import { Container, Col, Row } from 'react-bootstrap';
 import { NavBar } from '../components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import redfin from '../assets/img/redfin.png';
-import redfinLogo from '../assets/img/redfinLogo.png';
+import redfinBanner from '../assets/img/redfinBanner.png';
 import FadeInOut from '../components/FadeInOut';
 import redfinDemo from '../assets/img/redfinDemo.mp4'
 import redfinOutcome from '../assets/img/redfinOutcome.jpg';
@@ -67,26 +66,19 @@ function Redfin() {
     <div className="redfin" id="top">
       <ScrollToTopOnMount />
       <NavBar />
-      <Container className='project-header'>
-        <Row>
-            <Col className='header-textbox'>
-                <img className='logo' src={redfinLogo} alt='logo' />
-                <h2>Map View in Redfin Builder Tools</h2>
-                <p>
-                  Software Developer Intern | June 2022 - September 2022
-                </p>
-            </Col>
-            <Col>
-                <img src={redfin} alt="img" />
-            </Col>
-        </Row>
-      </Container>
+      <div className='project-header'>
+        <img src={redfinBanner} />
+      </div>
      
       <div className='project-content'>
+        <h1>SDE Intern @ Redfin - Map View in Redfin Builder Tools</h1>
         <FadeInOut>
           <Container className='project-overview'>
             <h3>WHY MAP VIEW?</h3>
             <Row>
+              <Col>
+                <img src={redfinOverview1} alt='redfin-1' />
+              </Col>
               <Col>
                 <p>Map View in Builder Tools introduces a new map view feature for renovation 
                   jobs in the Redfin internal website Builder Tools. Prior to my internship, 
@@ -94,9 +86,6 @@ function Redfin() {
                   inefficient since it required switching between multiple tabs and devices to view 
                   job details and their corresponding locations.
                 </p>
-              </Col>
-              <Col>
-                <img src={redfinOverview1} alt='redfin-1' />
               </Col>
             </Row>
             </Container>

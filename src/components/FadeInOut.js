@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 const FadeInOut = ({ children, threshold }) => {
   const [ref, inView] = useInView({
-    threshold: threshold || 0.5, // Trigger the animation when the element is 50% in view
+    threshold: threshold || 0.2, // Trigger the animation when the element is 50% in view
     triggerOnce: true, // Only trigger the animation once
   });
 

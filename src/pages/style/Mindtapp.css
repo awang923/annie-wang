@@ -4,47 +4,23 @@
 }
 
 /* .mindtapp{
-    color: #000000,
+    color: #74B4C0,
 } */
 
 .mindtapp .project-header{
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
-    /* padding: 200px 0 100px 0; */
-    background-color: #ffffff;
-    border-color: #ffffff;
-    border-radius: 0 0 40px 40px;
-    height: 90vh;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.mindtapp .project-header .row {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.mindtapp .logo {
-    width: 70%;
-    height: auto;
-    margin-bottom: 50px;
-}
-
-.mindtapp .project-header h2 {
-    font-size: 25pt;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    line-height: 1.5em;
-    margin-bottom: 20px;
-}
-
-.mindtapp .project-header p {
-    color: #18191D;
-    font-size: 14pt;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
+    img {
+        border-radius: 40px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .mindtapp .header-textbox {
@@ -52,10 +28,31 @@
     align-self: center;
 }
 
+.mindtapp .project-content {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .mindtapp .project-content .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 70px;
+    /* margin-bottom: 150px; */
     
+}
+
+.mindtapp .project-content .project-overview {
+    margin-bottom: 0px;
+}
+
+.mindtapp .project-content h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: left;
 }
 
 .mindtapp .project-content h3 {
@@ -67,43 +64,49 @@
     text-align: left;
 }
 
-.mindtapp .project-content p {
-    color: #B8B8B8;
-    font-size: 11pt;
+.mindtapp p {
+    color: #000000;
+    font-size: 12pt;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     text-align: left;
 }
-
-.mindtapp .phone-img {
-    width: 70%;
-    height: auto;
+.mindtapp .col {
+    display: table;
+    align-self: center;
 }
 
 .mindtapp .project-content .tech-details .techflow p{
-    color: #18191D !important;
+    color: #000 !important;
 }
 
 .mindtapp .project-content .tech-details .techflow .tech-title-text{
-    font-size: 14pt;
+    font-size: 12pt;
     display: flex;
     justify-content: center;
+    color: #000;
 }
 
-.techflow-phone-img {
-    margin-top: 40px;
+.mindtapp .techflow-phone-img {
     width: 50%;
     height: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
+
 .vid-player{
     display: flex;
     justify-content: center;
 }
 
+.outcome-img {
+    border-radius: 10px;
+}
+
 .mindtapp .outcome button {
     font-weight: 400;
-    color: #fffaf0;
-    border: 1px solid #fffaf0;
+    color: #74B4C0;
+    border: 1px solid #74B4C0;
     padding: 18px 34px;
     font-size: 14pt;
     margin-left: 18px;
@@ -114,7 +117,7 @@
   .mindtapp .outcome button a {
     z-index: 1;
     text-decoration: none;
-    color: #fffaf0;
+    color: #74B4C0;
   }
 
   .mindtapp .outcome button a:hover {
@@ -126,7 +129,7 @@
     width: 0%;
     height: 100%;
     position: absolute;
-    background-color: #fffaf0;
+    background-color: #74B4C0;
     left: 0;
     top: 0;
     z-index: -1;
@@ -143,7 +146,7 @@
   }
 
   .mindtapp .right-arrow {
-    color: #fffaf0;
+    color: #74B4C0;
   }
 
   .mindtapp .right-arrow:hover {

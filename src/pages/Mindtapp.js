@@ -4,7 +4,7 @@ import { NavBar } from '../components/NavBar';
 import FadeInOut from '../components/FadeInOut';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import mindtapp2 from '../assets/img/mindtapp2.png';
-import mindtappLogo from '../assets/img/mindtappLogo.png';
+import mindtappBanner from '../assets/img/mindtappBanner.png';
 import { MindtappTechFlow } from './components/MindtappTechFlow';
 import mindCubeDemo from '../assets/img/mindCubeDemo.mp4';
 import ReactPlayer from 'react-player';
@@ -19,22 +19,12 @@ function Mindtapp() {
     <div className="mindtapp" id="top">
       <ScrollToTopOnMount />
       <NavBar />
-      <Container className='project-header'>
-        <Row>
-            <Col className='header-textbox'>
-                <img className='logo' src={mindtappLogo} alt='logo' />
-                {/* <h2>Map View in mindtapp Builder Tools</h2> */}
-                <p>
-                  Frontend Developer | June 2021 - November 2021
-                </p>
-            </Col>
-            <Col>
-                <img className='phone-img' src={mindtapp2} alt="img" />
-            </Col>
-        </Row>
-      </Container>
+      <div className='project-header'>
+        <img src={mindtappBanner} />
+      </div>
      
       <div className='project-content'>
+      <h1>Software Engineer @ MINDTAPP</h1>
         <FadeInOut>
           <Container className='project-overview'>
             <h3>WHAT IS MINDTAPP?</h3>

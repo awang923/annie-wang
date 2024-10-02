@@ -10,42 +10,17 @@
 .redfin .project-header{
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
-    /* padding: 200px 0 100px 0; */
-    background-color: #3F3F3F;
-    border-color: #3F3F3F;
-    border-radius: 0 0 40px 40px;
-    height: 90vh;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.redfin .project-header .row {
-    width: 80%;
-    height: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.redfin .logo {
-    width: 40%;
-    height: auto;
-    margin-bottom: 50px;
-}
-
-.redfin .project-header h2 {
-    font-size: 25pt;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    line-height: 1em;
-    margin-bottom: 20px;
-}
-
-.redfin .project-header p {
-    color: #B8B8B8;
-    font-size: 14pt;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
+    img {
+        border-radius: 40px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .redfin .header-textbox {
@@ -53,14 +28,31 @@
     align-self: center;
 }
 
+.redfin .project-content {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .redfin .project-content .container {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 150px;
     
 }
 
 .redfin .project-content .project-overview {
     margin-bottom: 0px;
+}
+
+.redfin .project-content h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: left;
 }
 
 .redfin .project-content h3 {
@@ -72,12 +64,11 @@
     text-align: left;
 }
 
-.redfin .project-content p {
-    color: #B8B8B8;
-    font-size: 11pt;
+.redfin p {
+    color: #000000;
+    font-size: 12pt;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    font-weight: 300;
     text-align: left;
 }
 .redfin .col {
@@ -86,16 +77,21 @@
 }
 
 .redfin .project-content .tech-details .techflow p{
-    color: #18191D !important;
+    color: #000 !important;
 }
 
 .redfin .project-content .tech-details .techflow .tech-title-text{
-    font-size: 14pt;
+    font-size: 12pt;
     display: flex;
     justify-content: center;
+    color: #000;
 }
 
 .vid-player{
     display: flex;
     justify-content: center;
+}
+
+.outcome-img {
+    border-radius: 10px;
 }

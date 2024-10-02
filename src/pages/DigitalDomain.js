@@ -1,136 +1,142 @@
 import './style/DigitalDomain.css';
 import ReactPlayer from 'react-player';
-import { Container, Col, Row } from 'react-bootstrap';
-import { DigitalDomainTechFlow } from './components/DigitalDomainTechFlow';
+import { carouselItems, cronFeatures } from './components/constant';
+import { Container, Col, Row, Fade } from 'react-bootstrap';
+import ProcessCarousel from './components/ProcessCarousel';
 import { NavBar } from '../components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ddLogo from '../assets/img/ddLogo.png';
-import diskard from '../assets/img/diskard.png';
+import ddTreeview from '../assets/img/ddTreeview.png';
+import ddBanner from '../assets/img/ddBanner.png';
 import dd_demo1 from '../assets/img/dd_demo1.mp4';
 import dd_demo2 from '../assets/img/dd_demo2.mp4';
-import ddFinal from '../assets/img/ddFinal.png';
+import cronwebui from '../assets/img/cronwebui.png';
 import FadeInOut from '../components/FadeInOut';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { Footer } from '../components/Footer';
 import { Link } from 'react-router-dom';
 import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
 
+const searchFeatures = [
+  {
+    title: 'Feature 1: Quick Navigation',
+    description: `This feature introduces a "shift+click" functionality to empower 
+    users to navigate tree structures efficiently . Using a recursive algorithm to 
+    traverse the tree, comparing leaf node footprints to identify the one with the 
+    highest footprint regardless of its depth. This "highest footprint node" then becomes 
+    the new current view, effectively jumping the user directly to their desired location.`,
+  },
+  {
+    title: 'Feature 2: Date, Name and Size sorting',
+    description: `This feature adds "creation date" to the sorting criteria alongside 
+    "size" and "name," offering ascending or descending order options. The data model 
+    is extended to incorporate the new attribute, and the sorting algorithm is adapted 
+    to handle creation date comparisons efficiently.`,
+  }
+];
+
 function DigitalDomain() {
   return (
     <div className="digitaldomain" id="top">
       <ScrollToTopOnMount />
       <NavBar />
-      <Container className='project-header'>
-        <Row>
-          <Col className='header-textbox'>
-            <img className='logo' src={ddLogo} alt='logo' />
-              <h2>Digital Domain</h2>
-              <p>
-                Software Engineering | October 2023 - Present
-              </p>
-          </Col>
-          <Col>
-            <img src={diskard} alt="img" />
-          </Col>
-        </Row>
-      </Container>
-     
-      <div className='project-content'>
+      <div className="project-header">
+        <img src={ddBanner} alt="Digital Domain Banner" />
+      </div>
+
+      <div className="project-content">
+        <h1>Software Engineer @ Digital Domain - Diskard</h1>
         <FadeInOut>
-          <Container className='project-overview'>
-            <h3>WHAT IS DISKARD</h3>
-              <p>
-                Diskard is an internal web application accessible to both 
-                artists and managers, simplifying disk space management for VFX teams. 
-                Artists have intuitive tools to browse, organize, and modify the state 
-                of their published assets and work directories. They can track asset 
-                activity seamlessly and visualize data relocation through interactive 
-                graphs for comprehensive understanding. Managers benefit from clear 
-                insights into active shows, enabling collaboration and data-driven 
-                decision-making regarding storage usage and trends.
-              </p>
-          </Container>
+          <h2>PROJECT #1 - CRON WEB UI</h2>
+          <p>
+          Cron Web UI is a user-friendly application designed to simplify the 
+          management of scheduled cron jobs without the need for terminal commands. 
+          Built from scratch, it allows users to easily create, edit, and delete 
+          scheduled cron jobs directly through an intuitive interface. The 
+          application fetches data from the AWX API but offers a streamlined 
+          experience compared to the native AWX UI. Additionally, Cron Web UI 
+          evenly distributes jobs across multiple hosts, optimizing 
+          resource management for users. This project significantly enhances 
+          efficiency in managing automated tasks for system administrators.
+          </p>
+          <img src={cronwebui} />
+
+          <h3 style={{fontWeight: '500'}}>FEATURES</h3>
+          <ProcessCarousel items={cronFeatures} />
         </FadeInOut>
-        
-        <FadeInOut threshold={0.1}>
-          <Container className='tech-details'>
-            <h3>MY CONTRIBUTION TO DISKARD</h3>
-            <i className='side-notes'>
-              ** Core: The Core page consists of sections to track and manage artist’s 
-              publishes and work directory in different shows. **
-            </i>
-            <DigitalDomainTechFlow />
-          </Container>
-        </FadeInOut>
-        
+
         <FadeInOut>
-          <Container className='demos'>
-            <h3>DEMOS</h3>
-            <ul>
-              <li>
-                <p>Core - Explore assets in context & Enhanced asset search</p>
-                <div className='vid-player'>
-                  <ReactPlayer 
-                      url={dd_demo1} 
-                      controls={true} 
-                      onPlay={() => console.log('video is playing')} 
-                      onPause={() => console.log('video is paused')}
-                      onError={(e) => console.log('Error:', e)}
-                      width='100%'
-                      height='550px'
-                  />
-                </div>
-              </li>
-              <li>
-                <p>Core - Tree view</p>
-                <div className='vid-player'>
-                  <ReactPlayer 
-                      url={dd_demo2} 
-                      controls={true} 
-                      onPlay={() => console.log('video is playing')} 
-                      onPause={() => console.log('video is paused')}
-                      onError={(e) => console.log('Error:', e)}
-                      width='100%'
-                      height='550px'
-                  />
-                </div>
-              </li>
-            </ul>
-            
-          </Container>
+          <h2>PROJECT #2 - DISKARD</h2>
+          <p>
+            Diskard is an internal web application for simplifying disk space management
+            for VFX teams. It provides artists with intuitive tools to browse, organize,
+            and modify the state of their published assets and work directories.
+          </p>
+          <h3 style={{fontWeight: '500'}}>FEATURES</h3>
+          <ol>
+            <li>
+              <h3>Exploring Assets</h3>
+              <ProcessCarousel items={carouselItems} />
+            </li>
+            <li>
+              <h3>Enhancing Search</h3>
+              <ol type="a">
+                {searchFeatures.map((feature) => (
+                  <li>
+                    <h3>{feature.title}</h3>
+                    <p>{feature.description}</p>
+                  </li>
+                ))}
+              </ol>
+            </li>
+            <li>
+              <h3>Introuducing Tree View</h3>
+              <p style={{marginBottom: '20px'}}>
+                This feature replaces the single-level selection with a dynamic, multi-level 
+                tree view using D3.js Observable. Users can now visualize and navigate the entire asset 
+                directory structure, expanding/collapsing branches and selecting assets for deletion 
+                across multiple levels simultaneously. The view seamlessly updates via ReactJS hooks, 
+                and users switch between list and tree view on the fly. Leverages D3.js's strengths in 
+                visualizing hierarchical data and React's component-based architecture, this upgrade 
+                delivers a performant and user-friendly experience. Notably, the tree view retains all 
+                functionalities of the original list view, including multi-item selection and quick navigation.
+              </p>
+              <img src={ddTreeview} alt='tree-view' />
+            </li>
+            <li>
+              <h3>Managing Active Shows</h3>
+              <p>
+                Previously, managing active shows required administrators to manually edit a YAML file 
+                using terminal commands. This feature streamlines the process by displaying all active 
+                shows directly within Diskard. Normal users can now view the active show list for better 
+                transparency, and administrators can edit the active show list directly within the 
+                application. The changes made to the list within Diskard automatically update the 
+                relevant YAML file and install the changes. 
+              </p>
+            </li>
+          </ol>
         </FadeInOut>
-        
+
         <FadeInOut>
           <Container className='outcome'>
-            <h3>FINAL & TAKEAWAY</h3>
-            <Row>
-              <Col>
-              <p>
-                During my internship at Digital Domain, I'm most proud of taking ownership of features 
-                and mastering containerization with Docker. Working on Diskard honed my backend skills 
-                in Python and broadened my understanding of frontend development, particularly with ReactJS 
-                and diverse libraries. A pivotal moment was successfully deploying Diskard upgrades twice, 
-                resulting in positive feedback from the VFX and Core Engineering team. This experience not 
-                only reinforced my passion for web development but also afforded me valuable insights into 
-                VFX pipelines.
-              </p>
-              </Col>
-              <Col>
-                <img className='outcome-img' src={ddFinal} alt='final' />
-              </Col>
-            </Row>
-            
+            <button className="vvd" onClick={()=> console.log('website')}>
+                <a href='https://digitaldomain.com/'>
+                  Go To Company Website 
+                  <BsArrowRightShort size='30' className='right-arrow' />
+                </a>
+                
+            </button>
           </Container>
         </FadeInOut>
-      </div> 
-      <div className='project-nav'>
-        <h4 className='next'>
+      </div>
+
+      <div className="project-nav">
+        <h4 className="next">
           <Link to="/redfin">Next</Link>
           <BsArrowRightShort />
-        </h4>        
+        </h4>
       </div>
-      <Footer />    
-    </div> 
+      <Footer />
+    </div>
   );
 }
 
