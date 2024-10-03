@@ -37,6 +37,24 @@ const router = createHashRouter([
   }
 ]);
 
+const addGoogleAnalytics = () => {
+  const script1 = document.createElement('script');
+  script1.async = true;
+  script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-QPFJB2B7RS';
+  document.head.appendChild(script1);
+
+  const script2 = document.createElement('script');
+  script2.text = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QPFJB2B7RS');
+  `;
+  document.head.appendChild(script2);
+}
+
+addGoogleAnalytics();
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.Fragment>
