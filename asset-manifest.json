@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.bb280643.css",
-    "main.js": "/personal-portfolio/static/js/main.735c0373.js",
+    "main.css": "/personal-portfolio/static/css/main.3bd407de.css",
+    "main.js": "/personal-portfolio/static/js/main.3ddd08f0.js",
     "static/media/redfinDemo.mp4": "/personal-portfolio/static/media/redfinDemo.fe24921c626992efb38c.mp4",
     "static/media/dd_demo2.mp4": "/personal-portfolio/static/media/dd_demo2.48a5e37efe46208782a3.mp4",
     "static/media/dd_demo1.mp4": "/personal-portfolio/static/media/dd_demo1.ae2e1e7e4e2f8acc0f52.mp4",
@@ -36,11 +36,11 @@
     "static/media/mindtappBanner.png": "/personal-portfolio/static/media/mindtappBanner.14be38035503a10a5de6.png",
     "static/media/ddBanner.png": "/personal-portfolio/static/media/ddBanner.7fb55013f1095e3419f6.png",
     "index.html": "/personal-portfolio/index.html",
-    "main.bb280643.css.map": "/personal-portfolio/static/css/main.bb280643.css.map",
-    "main.735c0373.js.map": "/personal-portfolio/static/js/main.735c0373.js.map"
+    "main.3bd407de.css.map": "/personal-portfolio/static/css/main.3bd407de.css.map",
+    "main.3ddd08f0.js.map": "/personal-portfolio/static/js/main.3ddd08f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb280643.css",
-    "static/js/main.735c0373.js"
+    "static/css/main.3bd407de.css",
+    "static/js/main.3ddd08f0.js"
   ]
 }
